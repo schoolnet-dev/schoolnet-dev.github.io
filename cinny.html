@@ -4,22 +4,26 @@
     <style>
         body {
             background-color: black;
+            margin: 0; /* Removes default margin */
+            overflow: hidden; /* Prevents scrolling */
         }
     </style>
 </head>
 <body>
+    <widgetbot 
+        id="chat" 
+        server="1300587880393084949" 
+        channel="1300587881407971399" 
+        width="800px" 
+        height="600px"
+    ></widgetbot>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script> 
+    <script>
+        document.getElementById('chat').style.width = window.innerWidth + "px";
+        document.getElementById('chat').style.height = window.innerHeight + "px";
+    </script>
+
+    <a href="/index.html" style="color: white;">back</a> <!-- Optional: Change link color to white -->
 </body>
 </html>
-
-
-<widgetbot 
-id="chat" 
-server="1300587880393084949" 
-channel="1300587881407971399" 
-width="800px" 
-height="600px"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script> <script>document.getElementById('chat').style.width = window.innerWidth + "px" document.getElementById('chat').style.height = window.innerHeight + "px"</script>
-
-
-<a href="/index.html">back</a>
